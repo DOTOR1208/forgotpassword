@@ -3,6 +3,7 @@
 The following changes have been made to the database schema. Please refer to the schema.prisma file for a detailed view of the changes.
 
 #Setup Instructions
+
 1.Download the ZIP file
 Download the source code as a ZIP file from the repository.
 
