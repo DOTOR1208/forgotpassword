@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+#chatMessages {
+    height: calc(100vh - 128px); /* Adjust height based on header and fixed elements */
+    overflow-y: auto;
+}
+  
+/* Add padding to the bottom of the chat messages to avoid overlapping with the input field */
+#chatMessages {
+    padding-bottom: 72px; /* Space for input field */
+}

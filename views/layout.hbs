@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{title}}</title>
+        <link href="/stylesheets/style.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100">
+        <!-- Header -->
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="/home" class="text-2xl font-bold text-green-600">Group 05</a>
+
+                <!-- Navigation Links -->
+                <div class="flex ">
+                    <nav class="hidden sm:block space-x-8 text-xl px-4 py-2">
+                        <a href="/home" class="text-gray-600 hover:text-gray-800">Home</a>
+                        <a href="/chat" class="text-gray-600 hover:text-gray-800">New Chat</a>
+                        <a href="/users/register" class="text-gray-600 hover:text-gray-800">Register</a>
+
+
+                        <!-- ADDING=========================================================================ADDING -->
+                        <a href="/users/forgotpassword" class="text-gray-600 hover:text-gray-800">Forgot Password</a>
+                        <!--ADDING==========================================================================ADDING -->
+
+
+                    </nav>
+                    <a href="/users/login" class="bg-red-500 text-white text-xl ml-2 px-4 py-2 rounded hover:bg-red-600">Log In</a>
+                </div>
+                <!-- Log In Button -->
+                
+            </div>
+        </header>
+        {{{body}}}
+        <footer class="bg-gray-200 text-center py-4 mt-10">
+            <p class="text-gray-600">© 2024 Group 05. All rights reserved.</p>
+        </footer>      
+    </body>
+</html>

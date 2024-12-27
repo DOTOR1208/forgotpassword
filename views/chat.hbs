@@ -1,0 +1,34 @@
+<!-- Sidebar -->
+<div class="flex h-screen">
+    <!-- Left Sidebar -->
+      <div class="w-64 bg-gray-100 h-full p-4 flex flex-col justify-between">
+        <div>
+            <button id="newChatBtn" class="bg-black text-white px-4 py-2 rounded mb-4 w-full text-center">
+                New Chat
+            </button>
+            <div class="flex items-center mb-4">
+                <input id="searchInput" class="w-full border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-gray-400" type="text" placeholder="🔍 Search" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="flex-1 flex flex-col bg-white">
+        <!-- Chat Header -->
+        <div class="p-4 border-b text-xl font-semibold">Chat AI</div>
+
+        <!-- Chat Messages -->
+        <div id="chatMessages" class="flex-1 p-4 space-y-4 overflow-auto"></div>
+
+        <!-- Chat Input (hidden by default) -->
+        <div id="chatInput" class="sticky bottom-0 left-0 right-0 p-4 bg-gray-100 border-t hidden">
+            <div class="flex items-center bg-gray-200 rounded-lg max-w-4xl mx-auto">
+                <input id="messageInput" type="text" placeholder="Type a message..." class="flex-1 p-3 bg-gray-200 outline-none" />
+                <button id="sendBtn" class="p-3 text-gray-500 hover:text-black">
+                  ➤
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/javascripts/chat.js"></script>

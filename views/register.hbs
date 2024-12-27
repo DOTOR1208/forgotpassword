@@ -1,0 +1,54 @@
+<form action="/users/register" method="POST">
+    <section class="flex items-center justify-center min-h-screen bg-gray-100">
+        <!-- Container -->
+        <div class="bg-white shadow-md border border-gray-200 rounded-lg p-8 w-1/2 text-center">
+
+            <!-- Title -->
+            <h2 class="text-lg font-semibold text-gray-800 mb-6">
+                Create an account
+            </h2>
+
+            <!-- Input Fields -->
+            <div class="space-y-4">
+                <input type="email" placeholder="Your email" name="email"
+                    class="w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
+                <input type="text" placeholder="Username" name="username"
+                    class="w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
+                <input type="password" placeholder="Password" name="password"
+                    class="w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
+                <input type="password" placeholder="Confirm Password"  name="confirmPassword"
+                    class="w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required/>
+                {{#if error}}
+                    <div class="error-message text-xl text-center p-1 mb-4 text-red-700 font-bold">
+                        <p>{{error}}</p>
+                    </div>
+                {{/if}}
+            </div>
+
+            <!-- Register Button -->
+            <div class="mt-6">
+                <button class="w-1/2 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">
+                    Register
+                </button>
+            </div>
+
+            <!-- Alternative Registration -->
+            <div class="mt-8">
+            <p class="text-gray-600 font-medium mb-2">Try other registration</p>
+                <span class="flex justify-center">
+                    <button
+                    class="w-1/2 border border-gray-300 py-2 rounded-md hover:bg-gray-50 transition duration-200 flex items-center justify-center">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5 mr-2" />
+                        <span>Continue with Google</span>
+                    </button>
+                </span>
+            </div>
+
+            <!-- Already Have an Account -->
+            <div class="mt-6 text-sm text-gray-600">
+                Already have an account? <a href="#" class="text-blue-500 hover:underline">Log in</a>
+            </div>
+
+        </div>
+    </section>
+</form>
